@@ -67,3 +67,17 @@ Although no rules are currently configured, this is expected in a newly deployed
 - Alert generation
 - Correlation rules
 - SOC operational workflows
+
+![image](https://github.com/Amir-Fadelelsaid/Cloud-Security-Terraform-Lab/blob/0b8bf92fbfa18623d3f826915c2351db4e924c16/Sentinel%20Workbooks%20Visualization%20layer.png)
+## Microsoft Sentinel Workbooks (Visualization Layer)
+
+This screenshot verifies that Microsoft Sentinel Workbooks are available and operational within the SOC environment.
+
+Workbooks provide interactive dashboards and visual analytics for:
+- Security events
+- Incident trends
+- Threat hunting results
+- Data connector health
+- SOC performance metrics
+
+Although no custom workbooks are currently deployed, this confirms the environment is fully prepared for SOC visualization and monitoring once data ingestion increases.
