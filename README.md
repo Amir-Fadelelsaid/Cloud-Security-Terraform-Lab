@@ -24,6 +24,6 @@ It serves as the central data ingestion and analytics platform for the SOC, stor
 This screenshot confirms that Microsoft Sentinel has been successfully enabled and is actively running on the Log Analytics Workspace (law-cloud-soc).  
 Although no incidents are currently present, this is expected in a newly deployed SOC environment before data connectors and log sources are configured.
 
-![image](https://github.com/Amir-Fadelelsaid/Cloud-Security-TerraformLab/blob/0d1a478ef1cb10a63ccef9fd699a520144401965/Microsoft%20Sentinel%20%E2%80%93%20Data%20Connectors%20Configured.png)
+![image](https://github.com/Amir-Fadelelsaid/Cloud-Security-Terraform-Lab/blob/c5480358503593d1d9650b7088aa9b75abad2bac/Microsoft%20Sentinel%20%E2%80%93%20Data%20Connectors%20Configured.png)
 
 This screenshot shows the Microsoft Sentinel Data Connectors page with multiple Microsoft security services successfully connected, including Defender for Endpoint, Defender for Identity, Defender for Cloud Apps, Microsoft Entra ID Protection, and Microsoft Defender XDR. These connectors enable centralized ingestion of security telemetry into Sentinel, forming the foundation for threat detection, investigation, and SOC operations.
