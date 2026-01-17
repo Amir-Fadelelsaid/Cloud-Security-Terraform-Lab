@@ -55,3 +55,15 @@ This confirms the SOC is configured using Microsoft’s modern identity security
 - Lateral movement indicators tied to identity  
 
 Even if the Data Connectors page shows “0,” this is expected behavior when using Defender-based ingestion. The Content Hub installation is the authoritative proof that Entra ID integration is active and operational.
+
+![image](https://github.com/Amir-Fadelelsaid/Cloud-Security-Terraform-Lab/blob/a2d6e45bafee0ff7a8b407b7b212cfebcf3563ea/Sentinel%20Analytics%20rules%20engine%20verification.png)
+## Sentinel Analytics Rules Engine Verification
+
+This screenshot verifies that the Microsoft Sentinel Analytics Rules engine is deployed and operational.  
+Analytics rules form the detection core of the SOC by analyzing security telemetry and generating alerts.
+
+Although no rules are currently configured, this is expected in a newly deployed environment and confirms readiness for:
+- Threat detection logic
+- Alert generation
+- Correlation rules
+- SOC operational workflows
