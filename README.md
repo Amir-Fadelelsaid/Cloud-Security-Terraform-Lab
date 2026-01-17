@@ -8,3 +8,5 @@ This screenshot confirms the successful deployment of the Azure SOC core compone
 - Log Analytics Workspace: `law-cloud-soc`
 - Microsoft Sentinel enabled (`SecurityInsights`)
 - Storage Account: `cloudsocstorage*`
+
+![image](https://github.com/Amir-Fadelelsaid/Cloud-Security-Terraform-Lab/blob/122772c8e0315225b9659720a9ec9e283e677e29/Law-Cloud-Soc-Overview.png)
