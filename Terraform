@@ -1,1 +1,63 @@
+Terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 3.0"
+    }
+
+    random = {
+      source  = "hashicorp/random"
+      version = "~> 3.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  features {}
+}
+
+# --------------------------------
+# Resource Group (SOC Base)
+# --------------------------------
+resource "azurerm_resource_group" "soc_lab" {
+  name     = "rg-cloud-soc-lab"
+  location = "East US"
+}
+
+# --------------------------------
+# Log Analytics Workspace (SOC Core)
+# --------------------------------
+resource "azurerm_log_analytics_workspace" "soc_logs" {
+  name                = "law-cloud-soc"
+  location            = azurerm_resource_group.soc_lab.location
+  resource_group_name = azurerm_resource_group.soc_lab.name
+  sku                 = "PerGB2018"
+  retention_in_days   = 30
+}
+
+# --------------------------------
+# Microsoft Sentinel (SIEM)
+# --------------------------------
+resource "azurerm_sentinel_log_analytics_workspace_onboarding" "sentinel" {
+  workspace_id = azurerm_log_analytics_workspace.soc_logs.id
+}
+
+# --------------------------------
+# Random Integer for Unique Storage Name
+# --------------------------------
+resource "random_integer" "rand" {
+  min = 10000
+  max = 99999
+}
+
+# --------------------------------
+# Storage Account for Security Logs
+# --------------------------------
+resource "azurerm_storage_account" "security_storage" {
+  name                     = "cloudsocstorage${random_integer.rand.result}"
+  resource_group_name      = azurerm_resource_group.soc_lab.name
+  location                 = azurerm_resource_group.soc_lab.location
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
+}
 
