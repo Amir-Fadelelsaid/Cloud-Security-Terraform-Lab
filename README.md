@@ -113,23 +113,3 @@ Tracked resources include:
 - Randomized naming resources
 
 Terraform state locking confirms enterprise-grade Infrastructure-as-Code practices are being applied, ensuring deployment safety and consistency.
-
-![image](https://github.com/Amir-Fadelelsaid/Cloud-Security-Terraform-Lab/blob/fa0e350b88e9d21bfede7c21a2e209eba51216d8/Terraform%20State%20Management%20Verifcation%20Codes.png)
-## Terraform State Management Verification
-
-The following screenshots demonstrate:
-
-- Terraform CLI is installed and configured
-- Azure resources are actively tracked using Terraform state
-- State locking is enforced to prevent concurrent modification
-
-Tracked resources include:
-- Azure Resource Group
-- Log Analytics Workspace
-- Microsoft Sentinel onboarding
-- Security Storage Account
-- Randomized naming resources
-
-Terraform state locking confirms enterprise-grade Infrastructure-as-Code practices are being applied, ensuring deployment safety and consistency.
-
-
