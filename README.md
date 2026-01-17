@@ -28,3 +28,30 @@ Although no incidents are currently present, this is expected in a newly deploye
 ## Data Connectors Connected
 
 This screenshot shows the Microsoft Sentinel Data Connectors page with multiple Microsoft security services successfully connected, including Defender for Endpoint, Defender for Identity, Defender for Cloud Apps, Microsoft Entra ID Protection, and Microsoft Defender XDR. These connectors enable centralized ingestion of security telemetry into Sentinel, forming the foundation for threat detection, investigation, and SOC operations.
+
+![image](https://github.com/Amir-Fadelelsaid/Cloud-Security-Terraform-Lab/blob/48b981a42aed15818a38b2b18af47c3f653e1fa0/Microsoft%20Entra%20ID.png)
+## Installed Microsoft Entra ID
+This screenshot confirms that the Microsoft Entra ID solution has been successfully installed from the Microsoft Sentinel Content Hub.
+
+Rather than using legacy “Data Connectors,” modern Sentinel deployments ingest identity telemetry through the Microsoft Defender XDR platform.  
+Microsoft Entra ID logs and security signals flow as:
+
+Microsoft Entra ID → Microsoft Defender → Microsoft Sentinel
+
+The installed Entra ID solution enables:
+
+- Ingestion of sign-in logs and audit logs  
+- Detection of risky users and risky sign-ins  
+- Identity-based threat analytics and correlation  
+- Built-in workbooks for identity visibility  
+- Automated response via playbooks  
+- Alignment with Microsoft’s current SIEM/XDR architecture  
+
+This confirms the SOC is configured using Microsoft’s modern identity security pipeline and is capable of monitoring:
+
+- Privileged account misuse  
+- Suspicious authentication activity  
+- Cloud identity compromise attempts  
+- Lateral movement indicators tied to identity  
+
+Even if the Data Connectors page shows “0,” this is expected behavior when using Defender-based ingestion. The Content Hub installation is the authoritative proof that Entra ID integration is active and operational.
