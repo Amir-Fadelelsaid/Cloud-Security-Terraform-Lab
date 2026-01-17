@@ -19,7 +19,7 @@ It serves as the central data ingestion and analytics platform for the SOC, stor
 ![image](https://github.com/Amir-Fadelelsaid/Cloud-Security-Terraform-Lab/blob/fe6e07751f9c2168d2b3fce02f1566345ae6b8cc/sentinel-enabled.png)
 ## Microsoft Sentinel Enabled
 
-![Microsoft Sentinel Enabled](Screenshots/sentinel-enabled.png)
+
 
 This screenshot confirms that Microsoft Sentinel has been successfully enabled and is actively running on the Log Analytics Workspace (law-cloud-soc).  
 Although no incidents are currently present, this is expected in a newly deployed SOC environment before data connectors and log sources are configured.
