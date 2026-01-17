@@ -81,3 +81,18 @@ Workbooks provide interactive dashboards and visual analytics for:
 - SOC performance metrics
 
 Although no custom workbooks are currently deployed, this confirms the environment is fully prepared for SOC visualization and monitoring once data ingestion increases.
+
+![image](https://github.com/Amir-Fadelelsaid/Cloud-Security-Terraform-Lab/blob/0cadd59b0affb090576b3efc2953f54e89e54e05/Sentinel%20Automation%20And%20SOAR%20Readiness%20Verification.png)
+## Microsoft Sentinel Automation (SOAR Readiness)
+
+This screenshot verifies that Microsoft Sentinel Automation is enabled and accessible.
+
+Automation rules and playbooks provide Security Orchestration, Automation, and Response (SOAR) capabilities, allowing:
+- Automatic incident handling
+- Triggered remediation workflows
+- Integration with Azure Logic Apps
+- Incident suppression and enrichment
+- Playbook-based response actions
+
+Although no automation rules or playbooks are currently configured, this confirms the SOC environment is fully prepared for automated incident response once detection rules and operational workflows are deployed.
+
