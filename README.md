@@ -1,3 +1,94 @@
+☁️ Azure Cloud Security Terraform Lab
+📌 Project Overview
+
+This lab demonstrates the deployment of a secure Azure SOC environment using Terraform (Infrastructure-as-Code) and PowerShell.
+It provisions core security infrastructure such as a Resource Group, Log Analytics Workspace, Microsoft Sentinel onboarding, and a secure Storage Account.
+
+This simulates how cloud security engineers design, deploy, and manage SOC infrastructure in production environments.
+
+🛠️ Tools & Technologies Used
+
+Terraform (HCL – HashiCorp Configuration Language)
+
+PowerShell
+
+Microsoft Azure
+
+Microsoft Sentinel (SIEM)
+
+Log Analytics Workspace
+
+Azure Storage Account
+
+Azure Resource Groups
+
+Terraform State Management
+
+💻 Command Line & Coding Languages Used
+
+This project used:
+
+PowerShell → execution environment
+
+Terraform (HCL) → Infrastructure-as-Code language
+
+No Python or Linux shell was used. All automation was performed using PowerShell + Terraform.
+
+🚀 Terraform Lifecycle Demonstration
+
+The following commands were executed to deploy and validate infrastructure:
+
+terraform version
+terraform init
+terraform plan
+terraform apply
+
+These confirm:
+
+Terraform is installed and operational
+
+Infrastructure was created via code
+
+Azure resources are fully managed by Terraform
+
+🔒 Terraform State Management
+
+Terraform state tracking and locking were verified using:
+
+terraform state list
+
+Tracked resources include:
+
+Azure Resource Group
+
+Log Analytics Workspace
+
+Microsoft Sentinel onboarding
+
+Security Storage Account
+
+Randomized naming resources
+
+Terraform state locking was observed through access-denied behavior, proving enterprise-grade IaC safety controls.
+
+🧠 Skills Demonstrated
+
+PowerShell automation
+
+Terraform Infrastructure-as-Code engineering
+
+Azure cloud security architecture
+
+Microsoft Sentinel onboarding via code
+
+SIEM infrastructure deployment
+
+Secure storage provisioning
+
+Terraform state management
+
+DevSecOps workflow discipline
+
 # Cloud-Security-Terraform-Lab
 Infrastructure-as-Code project deploying an Azure SOC environment using Terraform, including Log Analytics Workspace, Microsoft Sentinel, and secure storage resources.
 ![image](https://raw.githubusercontent.com/Amir-Fadelelsaid/Cloud-Security-Terraform-Lab/301896a2575c22d6fe20234ac2818d5484fce514/rg-cloud-soc-lab-resourcegroup.png)
