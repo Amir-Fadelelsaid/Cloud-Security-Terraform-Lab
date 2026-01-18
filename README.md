@@ -113,3 +113,22 @@ Tracked resources include:
 - Randomized naming resources
 
 Terraform state locking confirms enterprise-grade Infrastructure-as-Code practices are being applied, ensuring deployment safety and consistency.
+
+![image](https://github.com/Amir-Fadelelsaid/Cloud-Security-Terraform-Lab/blob/5a2a5b594530ab02e019fd52c4911dd905062928/Terraform%20State%20Inspection%20For%20Sentinel%20And%20Storage%20Resources.png)
+## Terraform State Inspection (Deep Resource Validation)
+
+The following screenshots demonstrate real-time inspection of Terraform-managed Azure resources using `terraform state show`.  
+This validates that infrastructure is not only deployed, but fully governed through Terraform state.
+
+Validated components include:
+
+- Microsoft Sentinel Log Analytics Workspace onboarding
+- Azure Storage Account used for SOC security logs
+- Secure configuration attributes (HTTPS enforcement, TLS version, replication type, encryption, and endpoints)
+- Azure subscription-level resource IDs
+
+These inspections confirm enterprise-grade Infrastructure as Code practices, ensuring:
+- Configuration transparency
+- Deployment traceability
+- Security posture verification
+- Safe infrastructure lifecycle management
